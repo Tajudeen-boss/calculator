@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="result" readonly>
+    <table>
+      <tr>
+        <td><input type="button" value="7" onclick="appendToResult('7')"></td>
+        <td><input type="button" value="8" onclick="appendToResult('8')"></td>
+        <td><input type="button" value="9" onclick="appendToResult('9')"></td>
+        <td><input type="button" value="/" onclick="appendToResult('/')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="appendToResult('4')"></td>
+        <td><input type="button" value="5" onclick="appendToResult('5')"></td>
+        <td><input type="button" value="6" onclick="appendToResult('6')"></td>
+        <td><input type="button" value="-" onclick="appendToResult('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="appendToResult('1')"></td>
+        <td><input type="button" value="2" onclick="appendToResult('2')"></td>
+        <td><input type="button" value="3" onclick="appendToResult('3')"></td>
+        <td><input type="button" value="+" onclick="appendToResult('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="appendToResult('0')"></td>
+        <td><input type="button" value="." onclick="appendToResult('.')"></td>
+        <td><input type="button" value="√" onclick="calculateSquareRoot()"></td>
+        <td><input type="button" value="*" onclick="appendToResult('*')"></td>
+
+      </tr>
+      <tr>
+        <td><input type="button" value="log" onclick="calculateLog()"></td>
+        <td><input type="button" value="C" onclick="clearResult()"></td>
+        <td colspan="2"><input type="button" value="=" onclick="calculate()"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
